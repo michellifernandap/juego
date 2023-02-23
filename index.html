@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Piedra, papel o tijera</title>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+
+    .choices-container {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .choice {
+      padding: 20px;
+      border: 2px solid black;
+      border-radius: 10px;
+      margin: 0 10px;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .choice:hover {
+      background-color: #eee;
+    }
+
+    .selected {
+      background-color: green;
+      color: white;
+    }
+
+    #result-text {
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    #opponent-choice-text {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="choices-container">
+    <div class="choice" id="roca">Piedra</div>
+    <div class="choice" id="papel">Papel</div>
+    <div class="choice" id="tijeras">Tijera</div>
+  </div>
+  <div id="result-text"></div>
+  <div id="opponent-choice-text"></div>
+  <script src="script.js"></script>
+</body>
+</html>
